@@ -1,0 +1,41 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding = "10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation = "vertical"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content">
+
+        <ImageView
+            android:id = "@+id/viewImage"
+            android:onClick = "selectThisImage"
+            android:layout_gravity = "center_horizontal"
+            android:layout_width = "150dp"
+            android:layout_height = "150dp"/>
+
+        <Button
+            android:id = "@+id/bUploadImage"
+            android:onClick = "uploadThisImage"
+            android:text = "Upload Image"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content" />
+
+        <VideoView
+            android:id = "@+id/viewVideo"
+            android:onClick = "selectThisVideo"
+            android:layout_gravity = "center_horizontal"
+            android:layout_width = "150dp"
+            android:layout_height = "150dp"/>
+
+        <Button
+            android:id = "@+id/bUploadVideo"
+            android:text = "Upload Video"
+            android:onClick = "uploadThisVideo"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
