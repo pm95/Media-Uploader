@@ -43,7 +43,6 @@ public class ImageReceive
       while(bytesRead > -1) {
         bytesRead = dis.read(mybytearray, current, (mybytearray.length-current));
         if(bytesRead >= 0) current += bytesRead;
-        System.out.println("waiting....");
       }
 
       bos.write(mybytearray, 0 , current);
